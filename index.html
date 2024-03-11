@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Side Bar</title>
+        <link rel="stylesheet" href="sidebar.css">
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+
+        <div class="sidebar">
+
+            <div class="header">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="Company Logo">
+                </div>
+                <div class="company-info">
+                    <div class="c-name">
+                        <div class="company-name">Name</div>
+                        <div class="name">Company Name</div>
+                    </div>
+
+                    <div class="profile-icon">
+                        <img src="./img/profile.png" alt="Profile Icon">
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <span class="icon">&#128193;</span>
+                        <a href="#">Design Team</a>
+                    </li>
+
+                    <li>
+                        <span class="icon">&#x1F4C8;</span>
+                        <a href="#">Marketing Team</a>
+                    </li>
+                    <li>
+                        <span class="icon">&#128235;</span>
+                        <a href="#">Deployment Team</a>
+                    </li>
+                    <li>
+                        <span class="icon">&#128197;</span>
+                        <a href="#">Creat a Team</a>
+                    </li>
+                    <!-- Add more menu items as needed -->
+                </ul>
+            </div>
+            <hr>
+
+            <div class="menu1">
+                <div class="items">
+                    <a href="#" class="sub-btn">
+                        <i class="fas fa-file"></i>
+                        Product
+                        <i class="fas fa-plus dropdown" style="top:2px"></i>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">Roadmap</a>
+                        <a href="#">Feedback</a>
+                        <a href="#">Proformance</a>
+                        <a href="#">Team</a>
+                        <a href="#">Analytics</a>
+                    </div>
+                </div>
+
+                <div class="items"><a href class="sub-btn"><i
+                            class="fas fa-file"></i>Product1 <i
+                            class="fas fa-plus dropdown" style="top:2px"></i>
+                    </a>
+
+                </div>
+                <div class="items"><a href class="sub-btn"><i
+                            class="fas fa-file"></i>Product2 <i
+                            class="fas fa-plus dropdown" style="top:2px"></i>
+                    </a>
+
+                </div>
+                <div class="items"><a href class="sub-btn"><i
+                            class="fas fa-file"></i>Product3 <i
+                            class="fas fa-plus dropdown" style="top:2px"></i>
+                    </a>
+
+                </div>
+                <div class="items"><a href class="sub-btn"><i
+                            class="fas fa-file"></i>Product4 <i
+                            class="fas fa-plus dropdown" style="top:2px"></i>
+                    </a>
+
+                </div>
+                <div class="items"><a href class="sub-btn"><i
+                            class="fas fa-file"></i>Product5 <i
+                            class="fas fa-plus dropdown" style="top:2px"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <footer style=" margin-top: 8rem;">
+                <div class="menu2">
+                    <ul>
+                        <li>
+                            <span class="icon">🙋</span>
+                            <a href="#">Invite Teamates</a>
+                        </li>
+
+                        <li>
+                            <span class="icon">✉️</span>
+                            <a href="#">Help & find steps</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <p> 7 Days left on trail</p>
+                        <button>Add trail</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- main container -->
+        <div class="navbar" style="position: fixed;">
+            <div class="sec1">
+                <div class="company-name">Products</div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for...">
+                    <button><i class="fas fa-light fa-comment"></i></button>
+                    <button><i class="fas fa-light fa-gear"></i></button>
+                </div>
+            </div>
+           
+            <div class="sec2">
+                <div class="part1">
+                    <section class="section"><i class="fa-brands fa-product-hunt"></i> All Brand &#9207</section>
+                    <section class="section">Desk</section>
+                    <section class="section">Tags</section>
+                    <section class="section"><i class="fa-solid fa-arrow-down-a-z"></i> Sort &#9207</section>
+                    <section class="section"><i class="fa-solid fa-filter"></i> Filter &#9207</section>
+                </div>
+                <div class="part2">
+                    <section class="section">&#9960	Meeting </section>
+                    <section class="section"> &#11139 Import/Export</section>
+                </div>
+            </div>            
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Brand</th>
+                        <th>Description</th>
+                        <th>Members</th>
+                        <th>Categories</th>
+                        <th>Tags</th>
+                        <th>Next Meeting  <i class="fas fa-plus"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (1).png" class="brand-logo"> Brand A</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing....</td>
+                        <td>
+                            <div class="profile-img">
+                                <img src="./img/members.png" class="members">
+                                <img src="./img/members.png" class="members1">
+                                <img src="./img/members.png" class="members1">
+                                <img src="./img/members.png" class="members1">
+                            </div>
+                        </td>
+                        <td><div class="Category">
+                            <p>Automation</p>
+                            <!-- <p>Design</p> -->
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                            <p>Digital</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in 10min</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (2).png" alt="Brand B" class="brand-logo"> Brand B</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing....</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                        
+                        </div></td>
+                        <td><div class="Category">
+                            <p>E-Commerce</p>
+                            <p>B2B</p>
+                        </div></td>
+                        <td><div class="tags">
+                            <p>Transformation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in Next 5min</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (3).png" alt="Brand B" class="brand-logo"> Brand C</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing...</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                            
+                        </div></td>
+                        <td><div class="Category">
+                            <p>SAAS</p>
+                            <p>Mobile</p>
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#SAAS</p>
+                            <p>#Design</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in 8hr</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (4).png" alt="Brand B" class="brand-logo"> Brand D</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing....</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                        </div></td>
+                        <td><div class="Category">
+                            <p>Market Place</p>
+                            <!-- <p></p> -->
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in 2hr</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (5).png" alt="Brand B" class="brand-logo"> Brand E</td>
+                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing....</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            
+                        </div></td>
+                        <td><div class="Category">
+                            <p>B2C</p>
+                            <p>B2B</p>
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in 45min</p>
+                        </div></td>
+                    </tr>
+                    <tr> <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (6).png" alt="Brand B" class="brand-logo"> Brand F</td>
+                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing...</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                            
+                        </div></td>
+                        <td><div class="Category">
+                            <p>Technology</p>
+                            <p>SAAS</p>
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in 2 Days</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (7).png" alt="Brand B" class="brand-logo"> Brand G</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing....</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            
+                        </div></td>
+                        <td><div class="Category">
+                            <p>French</p>
+                            <p>Automation</p>
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>2 feb</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (8).png" alt="Brand B" class="brand-logo"> Brand H</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing....</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                        </div></td>
+                        <td><div class="Category">
+                            <p>Tranpotation</p>
+                            <!-- <p></p> -->
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                            <p>#Design</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>4 Feb</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (9).png" alt="Brand B" class="brand-logo"> Brand I</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing...</td>
+                        <td><div class="profile-img">
+                            <img src="./img/members.png" class="members">
+                            <img src="./img/members.png" class="members1">
+                            <img src="./img/members.png" class="members1">
+                            
+                        </div></td>
+                        <td><div class="Category">
+                            <p>Publishing</p>
+                            <p>B2C</p>
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>in Next 30min</p>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="selectAll"></td>
+                        <td> <img src="./img/1 (10).png" alt="Brand B" class="brand-logo"> Brand J</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing...</td>
+                        <td>Member C, Member D</td>
+                        <td><div class="Category">
+                            <p>Web Servies</p>
+                            <!-- <p></p> -->
+                        </div></td>
+                        <td><div class="tags">
+                            <p>#Automation</p>
+                        </div></td>
+                        <td><div class="meeting">
+                            <p>Join Now</p>
+                        </div></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

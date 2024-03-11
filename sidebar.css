@@ -1,0 +1,367 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #16283e; */
+}
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-color: #16283e; */
+  padding-top: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.logo img {
+  width: 35px; /* Adjust the size of the logo as needed */
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* .logo{
+    
+    background-color: #fff;
+    border-radius: 10%;
+  } */
+.profile-icon img {
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+}
+.company-name,
+.profile-icon img {
+  color: #000000;
+  margin: 0;
+}
+.name {
+  color: #000000;
+  margin: 0;
+}
+.c-name {
+  font-size: small;
+}
+.company-info {
+  display: flex;
+  gap: 30px;
+}
+.menu {
+  padding-left: 20px;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  padding: 10px 0;
+  color: #000000;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  background-color: #dcdcdc;
+}
+.menu ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+.menu ul li .icon {
+  margin-right: 10px;
+}
+
+
+
+
+.menu1{
+  width: 100%;
+  margin-top:20px ;
+}
+
+.menu1 .items{
+  position: relative;
+  align-items: center ;
+  justify-content: center;
+  
+}
+.menu1 .items a{
+  color: #000000;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.items i{
+  margin-right: 15px;
+}
+
+.items a .dropdown{
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  transition: 0.3s ease;
+}
+.items .sub-menu{
+  display:none;
+  margin-left: 2rem;
+  
+}
+.menu2 {
+  padding-left: 20px;
+}
+.menu2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu2 ul li {
+  padding: 10px 0;
+  color: #000000;
+  cursor: pointer;
+}
+.menu2 ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+.menu2 ul li .icon {
+  margin-right: 10px;
+}
+.footer {
+ display: flex;
+  
+}
+
+.footer div {
+  display: inline-flex; 
+  margin: 0 25px; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer div p{
+  font-size: 12px;
+  color: #000000;
+}
+
+
+.footer div button {
+  border: none;
+  outline: none;
+  background-color: #3b587a;
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+
+/* --------------------------------------------- */
+
+.sec1 {
+  /* background-color: #132936;/ */
+  margin-left: 250px;
+  width: 84%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  gap: 45rem;
+  justify-content: space-around;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar i {
+  margin-right: 10px;
+}
+
+.search-bar input[type="text"] {
+  border: 0.5px solid #000000;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 150px;
+  outline:none;
+  color: #000000;
+  background-color: #ffffff75;
+}
+.search-bar input[type="text"]::placeholder {
+  color: #464444; /* Change the color of the placeholder text */
+}
+
+.search-bar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d1d0d0d0;
+  color: #181717;
+  cursor: pointer;
+}
+
+
+/* -------------------- */
+.sec2 {
+  background-color: #ffffff;
+  /* border: 1px solid rgb(228, 228, 228); */
+  margin-left: 250px;
+  width: 84%;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  /* position: fixed; */
+  gap: 30rem;
+  justify-content: space-around;
+}
+.part1, .part2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 12px;
+  border: 1px solid rgb(228, 228, 228);
+  cursor: pointer;
+}
+
+.section:hover{
+  background-color: rgba(218, 218, 218, 0.622);
+}
+
+/* ------------------------------------ */
+/* Style for the table container */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 7rem;
+  position: fixed;
+  margin-left: 300px;
+}
+
+/* Style for the table headers */
+.table th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for the table data */
+.table td {
+  padding: 2px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for the table data in even rows */
+.table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for table rows */
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style for the brand logos */
+.brand-logo {
+  width: 20px; /* Adjust the width of the brand logos */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between logo and brand name */
+}
+
+/* ---------------------------- */
+.Category {
+  /* padding: 5px; Add padding for spacing */
+  font-size: small;
+  display: flex;
+  gap: 5px;
+}
+
+.Category p:nth-child(1) {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  color: blue; /* Set color for the first <p> tag */
+}
+
+.Category p:nth-child(2) {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid red;
+  color: red; /* Set color for the second <p> tag */
+}
+/* ---------------------- */
+.tags{
+  display: flex;
+  gap: 5px;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.tags p:nth-child(1) {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eff0f0;
+  border: 1px solid rgb(70, 70, 74);
+  color: rgb(63, 63, 87); /* Set color for the first <p> tag */
+}
+.tags p:nth-child(2) {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eff0f0;
+  border: 1px solid rgb(70, 70, 74);
+  color: rgb(63, 63, 87); /* Set color for the first <p> tag */
+}
+.meeting{
+  
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.meeting p:nth-child(1) {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #bad8ee87;
+  color: rgb(35, 35, 38); /* Set color for the first <p> tag */
+}
+/* ------------------------------ */
+
+.profile-img{
+  display: flex;
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+}
